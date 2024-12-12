@@ -72,13 +72,27 @@ justify-content: center;
     color: #1a1a1a;
     transition: 0.3s ease;
 }
+#navbar li button{
+    background: transparent;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    border: transparent;
+}
+#navbar li button:hover{
+    color: #088179;
+    cursor: pointer;
+}
 #navbar li a.active,
 #navbar li a:hover{
     color: #088179;
 }
 
 #navbar li a.active::after,
-#navbar li a:hover::after{
+#navbar li a:hover::after,
+#navbar li button:hover::after{
     content: "";
     width: 30%;
     height: 2px;
