@@ -18,5 +18,8 @@ function load_cart() {
 
 var button1 = document.getElementById("1");
 
-console.log(button1)
-
+if (button1) {
+  objIndex = cart.findIndex(obj => obj.id = 1);
+  cart[objIndex].quantity = cart[objIndex].quantity + 1;
+  console.log(cart);
+}
