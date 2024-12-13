@@ -225,6 +225,9 @@ background-color: #fddde4;
       text-align: start;
       padding: 10px 0;
   }
+  #produkt1 .pro button:hover{
+    cursor: pointer;
+}
   #produkt1 .pro .des span{
       color: #606063;
       font-size: 12;
