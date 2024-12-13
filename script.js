@@ -18,4 +18,5 @@ function load_cart() {
 
 var button1 = document.getElementById("1");
 
+console.log(button1)
 
