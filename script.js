@@ -44,6 +44,5 @@ window.alert(cart[i].quantity + ", " + cart[i].name);
 };
 i++;
 };
-display_list();
 };
 
