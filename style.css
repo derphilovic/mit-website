@@ -281,3 +281,28 @@ background-color: #fddde4;
     color: #1a1a1a;
 
     }
+
+#cart {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.item {
+    border-radius: 10px;
+    border: 1px solid #cce7d0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+#cart li p{
+    padding-top: 5px;
+    color: #1a1a1a;
+}

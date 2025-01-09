@@ -1,7 +1,7 @@
-const cart = [
+let cart = [
     {id: 1, name:"r7_7800X3D", price:455, quantity:0, finalprice: 0,},
     {id: 2, name:"r9_9900X", price:470, quantity:0, finalprice: 0,},
-    {id: 3, name:"r7_9800X3D", price:760, quantity:0, finalprice: 0,},
+    {id: 3, name:"r9_9800X3D", price:760, quantity:0, finalprice: 0,},
     {id: 4, name:"r5_7500f", price:122, quantity:0, finalprice: 0,},
     {id: 5, name:"rx_7900XTX", price:910, quantity:0, finalprice: 0,},
     {id: 6, name:"Herr Dreier", price:69420, quantity:0, finalprice: 0,},
@@ -16,7 +16,11 @@ function save_cart() {
 };
 
 function load_cart() {
-    cart = JSON.parse(localStorage.getItem("cart"));
+    const savedCart = JSON.parse(localStorage.getItem("cart"));
+    if (savedCart) {
+    cart.length = 0;
+    savedCart.forEach(item => cart.push(item));
+};
 };
 function add_item(x) {
 
@@ -32,6 +36,11 @@ function add_item(x) {
 function get_quantity(y)
 {
 quantity = cart[y].quantity;
+};
+
+function get_name(y)
+{
+nsame = cart[y].name;
 };
 
 function get_price(y)
