@@ -318,3 +318,39 @@ background-color: #fddde4;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+#cart li button{
+    text-decoration: none;
+    color: #1a1a1a;
+    border: transparent;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#contactfield {
+    padding: 40px 20px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.form-wrapper textarea {
+    min-height: 150px;
+    resize: vertical;
+}

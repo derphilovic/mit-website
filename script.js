@@ -30,7 +30,7 @@ function add_item(x) {
     cart[objIndex].quantity = cart[objIndex].quantity + 1;
   };
   console.log(cart);
-  window.alert("Product added!");
+  window.alert("Produkt hinzugefügt!");
   save_cart();
 };
 
@@ -71,7 +71,7 @@ function addCartItem(img, Names, price, id) {
     <div class="item" id="${price}">
      <img src="${img}" alt="">
     <p id="1me">${Names}</p>
-    <label for="Quantity">Quantity</label>
+    <label for="Quantity">Menge</label>
     <select name="Quantity" id="${id}" onchange="update_quantity(this.value, ${id})">
     <option value="1">1</option>
     <option value="2">2</option>
