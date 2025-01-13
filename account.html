@@ -17,37 +17,40 @@
         <li><a href="index.html">Start</a></li>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="about.html">Über uns</a></li>
-        <li><a  class="active" href="kontakt.html">Kontakt</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
         <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-        <li><a href="account.html"><i class="fa-solid fa-user"></i></a></li>
+        <li><a  class="active"  href="account.html"><i class="fa-solid fa-user"></i></a></li>
     </ul>
 </div>
 </section>
 
-<section id="contactfield">
+<section id="loginfield">
     <div class="contact-container">
-        <h1>Kontakt</h1>
+        <h1>Account erstellen</h1>
         <div class="form-wrapper">
-            <form action="kontakt-speicher.php" method="post">
+            <form action="account-speicher.php" method="post">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name">
-                <label for="message">Nachricht</label>
-                <textarea id="message" name="message" style="height: 365px;"></textarea>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
                 <label for="email">E-Mail</label>
                 <input type="email" name="email" id="email">
-                <label for="typeofmsg">Grund der Nachricht</label>
-                <select id="typeofmsg" name="typeofmsg">
-                    <option value="1">Produkt zurücksenden</option>
-                    <option value="2">Problem mit dem Produkt</option>
-                    <option value="3">Fragen zum Bestellablauf</option>
-                    <option value="4">Sonstiges</option>
-                </select>
-                <button>Absenden</button>
+                <label for="adress">Adresse</label>
+                <input type="text" name="adress" id="adress">
+                <label for="passw">Passwort</label>
+                <input type="password" name="passw" id="passw">
+                <label for="passwrpt">Passwort wiederholen</label>
+                <input type="password" name="passwrpt" id="passwrpt">
+                <button>Account erstellen</button>
             </form>
         </div>
+        <br>
+        <p>Hast du bereits ein Konto? <a href="log-in.html">Log-In</a> </p>
     </div>
+    
 </section>
-
+<br>
+<br>
 <section id="footer" >
     <div> 
         <img src="graphics/2.png" class="pic" alt="">
