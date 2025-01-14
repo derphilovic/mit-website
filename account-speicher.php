@@ -1,3 +1,28 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/431ac6197f.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<title>Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section id="header">
+<a href="index.html"><img src="graphics/2.png" class="logo" alt=""></a>
+<div>
+    <ul id="navbar">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        <li><a  class="active"  href="account.html"><i class="fa-solid fa-user"></i></a></li>
+    </ul>
+</div>
+</section>
 <?php
 $name = $_POST["name"];
 $username = $_POST["username"];
@@ -32,22 +57,28 @@ if ($result->num_rows > 0) {
   } 
   
   if (! $name) {
+    echo'<button onclick="history.back()"><i class="fa-solid fa-arrow-left"></i></button>';
     die("Name eingeben!");
 }
 if (! $username) {
+    echo'<button onclick="history.back()"><i class="fa-solid fa-arrow-left"></i></button>';
     die("Nutzername eingeben!");
 }
 if (! $email) {
+    echo'<button onclick="history.back()"><i class="fa-solid fa-arrow-left"></i></button>';
     die("Email eingeben!");
 }
 if (! $adress) {
+    echo'<button onclick="history.back()"><i class="fa-solid fa-arrow-left"></i></button>';
     die("Adresse eingeben!");
 }
 if (! $passw) {
+    echo'<button onclick="history.back()"><i class="fa-solid fa-arrow-left"></i></button>';
     die("Passwort eingeben!");
 }
 
 if ($passw  != $passwrpt) {
+    echo'<button onclick="history.back()"><i class="fa-solid fa-arrow-left"></i></button>';
 die("Passwort falsch wiederholt");
 }
 
