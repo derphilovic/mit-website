@@ -35,7 +35,7 @@ if (mysqli_connect_errno()) {
        if ($row["username"] == $usrname){
         $valid = 1;
        }
-       if ($row["password"] == $pswrd){
+       if ($row["password"] == $pswrd && $valid == 1){
         $validpswrd = 1;
        }
      }
